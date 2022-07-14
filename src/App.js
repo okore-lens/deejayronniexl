@@ -1,9 +1,15 @@
-import './App.css';
+import { Container, Row, Col, Button } from "react-bootstrap";
 
 function App() {
   return (
     <div className="App">
-      Hello world
+      <Container>
+        <Row>
+          <Col> 
+            <Button>Hello world</Button>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 }
