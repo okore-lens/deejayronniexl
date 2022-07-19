@@ -1,0 +1,21 @@
+.footer {
+  //   background-color: aqua;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 14px;
+  p {
+    margin: 0;
+    .text-link {
+      margin: 6px;
+    }
+  }
+
+  .media-links {
+    color: white;
+    font-size: 24px;
+    .icon {
+      margin: 12px;
+    }
+  }
+}

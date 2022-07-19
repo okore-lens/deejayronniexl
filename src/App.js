@@ -6,6 +6,7 @@ import Merch from "./components/pages/merch/Merch";
 import Discography from "./components/pages/discography/Discography";
 import ContactUs from "./components/pages/contactUs/ContactUs";
 import Events from "./components/pages/events/Events";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -13,14 +14,15 @@ function App() {
       <Container>
         <Row>
           <Col>
-            <NavBar></NavBar>
+            <NavBar />
             <Routes>
-              <Route exact path="/" element ={<Home />} />
-              <Route exact path="/merch" element ={<Merch />} />
-              <Route exact path="/discography" element ={<Discography />} />
-              <Route exact path="/contact-us" element ={<ContactUs />} />
-              <Route exact path="/events" element ={<Events />} />
+              <Route exact path="/" element={<Home />} />
+              <Route exact path="/merch" element={<Merch />} />
+              <Route exact path="/discography" element={<Discography />} />
+              <Route exact path="/contact-us" element={<ContactUs />} />
+              <Route exact path="/events" element={<Events />} />
             </Routes>
+            <Footer />
           </Col>
         </Row>
       </Container>
