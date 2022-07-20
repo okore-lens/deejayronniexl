@@ -17,6 +17,8 @@ import {
   faMixcloud,
 } from "@fortawesome/free-brands-svg-icons";
 
+import { Timeline, Tweet } from "react-twitter-widgets";
+// import TwitterTimelineEmbed from "react-twitter-embed/dist/components/TwitterTimelineEmbed";
 // import Container from "react-bootstrap/esm/Container";
 
 const Home = () => {
@@ -45,7 +47,26 @@ const Home = () => {
         </Col>
         <Col sm={4} className="feed">
           <h4>Feed</h4>
-          <div className="tweets">Tweets</div>
+          {/* <div className="tweets"> */}
+          Tweets
+          {/* <Tweet tweetId="841418541026877441" /> */}
+          {/* // Timeline (with options) */}
+          <Timeline
+            dataSource={{
+              sourceType: "profile",
+              screenName: "_okorelens",
+            }}
+            options={{
+              height: "500px",
+              theme: "dark",
+            }}
+          />
+          {/* <TwitterTimelineEmbed
+              sourceType="profile"
+              screenName="saurabhnemade"
+              options={{ height: 400 }}
+            /> */}
+          {/* </div> */}
         </Col>
       </Row>
       {/* About Section --> A card that has a picture,text and social media links */}
