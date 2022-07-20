@@ -3,3 +3,7 @@ $body-color: #eb1b1b;
 $primary: #e6e9e7;
 
 @import "~bootstrap/scss/bootstrap";
+
+::-webkit-scrollbar {
+  display: none;
+}
