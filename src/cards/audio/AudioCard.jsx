@@ -3,7 +3,7 @@ import { Row, Col } from "react-bootstrap";
 import {
   faMusic,
   faPlayCircle,
-  faShare,
+  faShareAlt,
   faDownload,
 } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
@@ -20,7 +20,7 @@ const AudioCard = () => {
       </Col>
       <Col sm={3}>
         <FontAwesomeIcon className="icon" icon={faPlayCircle} />
-        <FontAwesomeIcon className="icon" icon={faShare} />
+        <FontAwesomeIcon className="icon" icon={faShareAlt} />
         <FontAwesomeIcon className="icon" icon={faDownload} />
         <button>Comment</button>
       </Col>

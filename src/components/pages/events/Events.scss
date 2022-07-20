@@ -1,0 +1,12 @@
+.events {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  .events-section {
+    .event {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
