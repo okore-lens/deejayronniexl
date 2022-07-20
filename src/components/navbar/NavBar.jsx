@@ -36,7 +36,7 @@ function NavBar() {
                 </Nav.Link>
 
                 <Nav.Link as={Link} to="/contact-us">
-                  <span className="link button"> Contact Us</span>
+                  <span className="link"> Contact Us</span>
                 </Nav.Link>
               </Nav>
             </Navbar.Collapse>
