@@ -4,7 +4,11 @@ import image from "../../../assets/images/img.jpg";
 import image2 from "../../../assets/images/home-background.png";
 import { Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMusic } from "@fortawesome/free-solid-svg-icons";
+import {
+  faMusic,
+  faAngleLeft,
+  faAngleRight,
+} from "@fortawesome/free-solid-svg-icons";
 
 // import Container from "react-bootstrap/esm/Container";
 
@@ -12,6 +16,10 @@ const Home = () => {
   const myStyle = {
     backgroundImage: `url(${image})`,
   };
+  const myStyle2 = {
+    backgroundImage: `url(${image})`,
+  };
+
   return (
     <div className="home">
       {/* Image Area --> Should cover at least 0.75 of the initial viewheight of the browser */}
@@ -21,7 +29,11 @@ const Home = () => {
         <Col sm={7} className="carousel">
           <h4>Project Titles</h4>
           <p>Project Title</p>
-          <div className="img-place">Image Holder</div>
+          <div className="project-slide">
+            <FontAwesomeIcon className="icon" icon={faAngleLeft} />
+            <div style={myStyle2} className="img-place"></div>
+            <FontAwesomeIcon className="icon" icon={faAngleRight} />
+          </div>
           <button>
             <FontAwesomeIcon className="icon" icon={faMusic} />
             Listen

@@ -1,0 +1,22 @@
+.audio-card {
+  background-color: #b0aaaa;
+  border-radius: 20px;
+  color: #d9d9d9;
+  text-align: center;
+  //   display: flex;
+  align-items: center;
+  margin: 20px;
+  .icon {
+    font-size: 20px;
+    margin: 0 10px;
+    color: #111111;
+  }
+  button {
+    color: #d9d9d9;
+    background-color: #b0aaaa;
+    border: 1px solid #111111;
+    border-radius: 5px;
+    font-weight: bolder;
+    margin: 0 10px;
+  }
+}

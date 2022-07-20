@@ -11,10 +11,10 @@ import Footer from "./components/footer/Footer";
 function App() {
   return (
     <div className="App">
+      <NavBar />
       <Container>
         <Row>
           <Col>
-            <NavBar />
             <Routes>
               <Route exact path="/" element={<Home />} />
               <Route exact path="/merch" element={<Merch />} />
