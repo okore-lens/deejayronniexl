@@ -1,0 +1,11 @@
+.merch {
+  color: #111111;
+  text-align: center;
+  background-color: #964444;
+  border-radius: 20px;
+  padding: 10px;
+  .merch-items {
+    display: flex;
+    overflow: scroll;
+  }
+}

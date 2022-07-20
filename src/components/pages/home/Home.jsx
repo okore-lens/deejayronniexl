@@ -23,9 +23,6 @@ const Home = () => {
   const myStyle = {
     backgroundImage: `url(${image})`,
   };
-  const myStyle2 = {
-    backgroundImage: `url(${image})`,
-  };
 
   return (
     <div className="home">
@@ -38,7 +35,7 @@ const Home = () => {
           <p>Project Title</p>
           <div className="project-slide">
             <FontAwesomeIcon className="icon" icon={faAngleLeft} />
-            <div style={myStyle2} className="img-place"></div>
+            <div style={myStyle} className="img-place"></div>
             <FontAwesomeIcon className="icon" icon={faAngleRight} />
           </div>
           <button>
