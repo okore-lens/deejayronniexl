@@ -36,11 +36,11 @@ const Discography = () => {
         <AudioCard />
         <AudioCard />
       </div>
-      {/* Video Section */}
+      {/* Video Section
       <div className="video-section">
         <h2>Video</h2>
         <VideoCard />
-      </div>
+      </div> */}
     </div>
   );
 };
