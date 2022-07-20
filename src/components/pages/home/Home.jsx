@@ -9,6 +9,13 @@ import {
   faAngleLeft,
   faAngleRight,
 } from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebook,
+  faTwitter,
+  faYoutube,
+  faInstagram,
+  faMixcloud,
+} from "@fortawesome/free-brands-svg-icons";
 
 // import Container from "react-bootstrap/esm/Container";
 
@@ -82,13 +89,30 @@ const Home = () => {
                 labore et dolore magna aliqua.Lorem ipsum dolor sit amet,
                 consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                 labore et dolore magna aliqua.Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua.Lorem ipsum dolor sit amet,
+                consectetur adipiscixng elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet,
                 consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                 labore et dolore magna ali.orem ipsum dolor sit amet,
                 consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                 labore et dolore magna ali
               </p>
+            </div>
+            <div className="media-links">
+              <a href="#">
+                <FontAwesomeIcon className="icon" icon={faFacebook} />
+              </a>
+              <a href="#">
+                <FontAwesomeIcon className="icon" icon={faTwitter} />
+              </a>
+              <a href="#">
+                <FontAwesomeIcon className="icon" icon={faYoutube} />
+              </a>
+              <a href="#">
+                <FontAwesomeIcon className="icon" icon={faInstagram} />
+              </a>
+              <a href="#">
+                <FontAwesomeIcon className="icon" icon={faMixcloud} />
+              </a>
             </div>
           </Col>
         </Row>

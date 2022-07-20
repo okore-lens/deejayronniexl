@@ -36,7 +36,6 @@ const Footer = () => {
       </p>
       <div className="media-links">
         <a href="#">
-          {" "}
           <FontAwesomeIcon className="icon" icon={faFacebook} />
         </a>
         <a href="#">
