@@ -3,11 +3,75 @@
     height: 100vh;
     // margin-top: -70px;
     // font-size: 50px;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
+    background-position: center center;
   }
   .home-tile {
-    width: 70%;
-    background-color: beige;
+    width: 100%;
+    // background-color: beige;
+    display: flex;
+    text-align: center;
+    // height: max-content;
+    .carousel {
+      background-color: #d9d9d9;
+      border-radius: 40px;
+      margin: 14px;
+      padding: 5px;
+
+      .img-place {
+        background-color: black;
+        border-radius: 40px;
+        margin: 5px auto;
+        width: 470px;
+        height: 470px;
+      }
+      button {
+        margin: 3px;
+        color: #ffffff;
+        background-color: #c71a1a;
+        border-radius: 5px;
+        .icon {
+          margin-right: 5px;
+          color: #111111;
+        }
+      }
+    }
+    .feed {
+      background-color: #d9d9d9;
+      margin: 14px;
+      border-radius: 40px;
+      padding: 5px;
+
+      .tweets {
+        background-color: black;
+        width: 300px;
+        height: 470px;
+        border-radius: 40px;
+        margin: auto;
+      }
+    }
+  }
+  .about {
+    border-radius: 40px;
+    padding: 10px;
+    background-color: #d9d9d9;
+    h5 {
+      text-align: center;
+    }
+
+    .text {
+      color: #111111;
+    }
+    .image {
+      float: right;
+      width: max-content;
+      height: max-content;
+      border-radius: 10px;
+      overflow: hidden;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
   }
 }
