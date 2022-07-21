@@ -8,6 +8,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 import "./AudioCard.scss";
+import { Link } from "react-router-dom";
 
 const AudioCard = () => {
   return (
@@ -20,9 +21,15 @@ const AudioCard = () => {
       </Col>
       <Col sm={3}>
         <FontAwesomeIcon className="icon" icon={faPlayCircle} />
-        <FontAwesomeIcon className="icon" icon={faShareAlt} />
+
+        <a href="#">
+          <FontAwesomeIcon className="icon" icon={faShareAlt} />
+        </a>
         <FontAwesomeIcon className="icon" icon={faDownload} />
-        <button>Comment</button>
+
+        <Link to="/contact-us">
+          <button>Comment</button>
+        </Link>
       </Col>
     </Row>
   );

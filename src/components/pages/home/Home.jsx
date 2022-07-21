@@ -24,11 +24,6 @@ const Home = () => {
     backgroundImage: `url(${image})`,
   };
 
-  const ButtonHandler = () => {
-    console.log("Clicked");
-    return <a href="https://www.mixcloud.com/ronnie-griffins/"></a>;
-  };
-
   return (
     <div className="home">
       {/* Image Area --> Should cover at least 0.75 of the initial viewheight of the browser */}
@@ -43,10 +38,12 @@ const Home = () => {
             <div style={myStyle} className="img-place"></div>
             <FontAwesomeIcon className="icon" icon={faAngleRight} />
           </div>
-          <button onClick={ButtonHandler}>
-            <FontAwesomeIcon className="icon" icon={faMusic} />
-            Listen
-          </button>
+          <a href="https://www.mixcloud.com/ronnie-griffins/" target="_blank">
+            <button>
+              <FontAwesomeIcon className="icon" icon={faMusic} />
+              Listen
+            </button>
+          </a>
         </Col>
         <Col sm={4} className="feed">
           <h4>Feed</h4>
