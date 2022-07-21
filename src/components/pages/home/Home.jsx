@@ -18,12 +18,15 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 import { Timeline, Tweet } from "react-twitter-widgets";
-// import TwitterTimelineEmbed from "react-twitter-embed/dist/components/TwitterTimelineEmbed";
-// import Container from "react-bootstrap/esm/Container";
 
 const Home = () => {
   const myStyle = {
     backgroundImage: `url(${image})`,
+  };
+
+  const ButtonHandler = () => {
+    console.log("Clicked");
+    return <a href="https://www.mixcloud.com/ronnie-griffins/"></a>;
   };
 
   return (
@@ -40,17 +43,14 @@ const Home = () => {
             <div style={myStyle} className="img-place"></div>
             <FontAwesomeIcon className="icon" icon={faAngleRight} />
           </div>
-          <button>
+          <button onClick={ButtonHandler}>
             <FontAwesomeIcon className="icon" icon={faMusic} />
             Listen
           </button>
         </Col>
         <Col sm={4} className="feed">
           <h4>Feed</h4>
-          {/* <div className="tweets"> */}
           Tweets
-          {/* <Tweet tweetId="841418541026877441" /> */}
-          {/* // Timeline (with options) */}
           <Timeline
             dataSource={{
               sourceType: "profile",
@@ -61,12 +61,6 @@ const Home = () => {
               theme: "dark",
             }}
           />
-          {/* <TwitterTimelineEmbed
-              sourceType="profile"
-              screenName="saurabhnemade"
-              options={{ height: 400 }}
-            /> */}
-          {/* </div> */}
         </Col>
       </Row>
       {/* About Section --> A card that has a picture,text and social media links */}
@@ -119,16 +113,22 @@ const Home = () => {
               <a href="#">
                 <FontAwesomeIcon className="icon" icon={faFacebook} />
               </a>
-              <a href="#">
+              <a href="https://twitter.com/deejayronnieXL" target="_blank">
                 <FontAwesomeIcon className="icon" icon={faTwitter} />
               </a>
               <a href="#">
                 <FontAwesomeIcon className="icon" icon={faYoutube} />
               </a>
-              <a href="#">
+              <a
+                href="https://www.instagram.com/deejayronnie_xl/"
+                target="_blank"
+              >
                 <FontAwesomeIcon className="icon" icon={faInstagram} />
               </a>
-              <a href="#">
+              <a
+                href="https://www.mixcloud.com/ronnie-griffins/"
+                target="_blank"
+              >
                 <FontAwesomeIcon className="icon" icon={faMixcloud} />
               </a>
             </div>
