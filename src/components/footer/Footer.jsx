@@ -38,16 +38,16 @@ const Footer = () => {
         <a href="#">
           <FontAwesomeIcon className="icon" icon={faFacebook} />
         </a>
-        <a href="#">
+        <a href="https://twitter.com/deejayronnieXL" target="_blank">
           <FontAwesomeIcon className="icon" icon={faTwitter} />
         </a>
         <a href="#">
           <FontAwesomeIcon className="icon" icon={faYoutube} />
         </a>
-        <a href="#">
+        <a href="https://www.instagram.com/deejayronnie_xl/" target="_blank">
           <FontAwesomeIcon className="icon" icon={faInstagram} />
         </a>
-        <a href="#">
+        <a href="https://www.mixcloud.com/ronnie-griffins/" target="_blank">
           <FontAwesomeIcon className="icon" icon={faMixcloud} />
         </a>
       </div>
