@@ -1,9 +1,10 @@
 import React from "react";
 import AudioCard from "../../../cards/audio/AudioCard";
-import VideoCard from "../../../cards/video/VideoCard";
+// import VideoCard from "../../../cards/video/VideoCard";
 import "./Discography.scss";
-
+import audiolist from "../../../assets/arrays/audios";
 const Discography = () => {
+  console.log(audiolist);
   return (
     <div className="discography">
       <h1>Discography</h1>
@@ -29,12 +30,15 @@ const Discography = () => {
       {/* Audio Section */}
       <div className="audio-section">
         <h2>Audio</h2>
+        {audiolist.map((audio) => (
+          <AudioCard key={audio.id} title={audio.title} link={audio.link} />
+        ))}
+        {/* <AudioCard />
         <AudioCard />
         <AudioCard />
         <AudioCard />
         <AudioCard />
-        <AudioCard />
-        <AudioCard />
+        <AudioCard /> */}
       </div>
       {/* Video Section
       <div className="video-section">

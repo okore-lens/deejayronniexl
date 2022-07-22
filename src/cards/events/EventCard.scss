@@ -7,10 +7,10 @@
   margin: 7px;
 
   .contents {
-    display: flex;
+    // display: flex;
     .image {
       margin: 5px;
-      width: 60%;
+      // width: 60%;
       img {
         border-radius: 10px;
         width: 100%;
@@ -19,9 +19,11 @@
     }
     .events-details {
       margin: 5px;
+      text-align: center;
       .detail {
         display: flex;
-        // justify-content: center;
+        justify-content: center;
+        // padding: 3px;
         // align-items: center;
         .icon {
           font-size: 20px;

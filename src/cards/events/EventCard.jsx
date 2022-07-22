@@ -10,10 +10,10 @@ import {
 
 import "./EventCard.scss";
 
-const EventCard = () => {
+const EventCard = (props) => {
   return (
     <div className="event-card">
-      <h5>Event Name</h5>
+      <h5>{props.name}</h5>
       <div className="contents">
         <div className="image">
           <img src={image} alt="DeejayRonnieXL image" />
@@ -21,11 +21,11 @@ const EventCard = () => {
         <div className="events-details">
           <div className="detail">
             <FontAwesomeIcon className="icon" icon={faClock} />
-            <p>Time of Event</p>
+            <p>{props.time}</p>
           </div>
           <div className="detail">
             <FontAwesomeIcon className="icon" icon={faMapMarker} />
-            <p>Event Location</p>
+            <p>{props.location}</p>
           </div>
           <div className="detail">
             <FontAwesomeIcon className="icon" icon={faShareAlt} />

@@ -10,19 +10,19 @@ import React from "react";
 import "./AudioCard.scss";
 import { Link } from "react-router-dom";
 
-const AudioCard = () => {
+const AudioCard = (props) => {
   return (
     <Row className="audio-card">
       <Col sm={1}>
         <FontAwesomeIcon className="icon" icon={faMusic} />
       </Col>
       <Col sm={8}>
-        <p>Audio Title --&gt; adipiscing elit, sed do eiusmod tempor </p>
+        <p>{props.title}</p>
       </Col>
       <Col sm={3}>
         <FontAwesomeIcon className="icon" icon={faPlayCircle} />
 
-        <a href="#">
+        <a href={props.link}>
           <FontAwesomeIcon className="icon" icon={faShareAlt} />
         </a>
         <FontAwesomeIcon className="icon" icon={faDownload} />
