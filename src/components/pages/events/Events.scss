@@ -4,9 +4,23 @@
   align-items: center;
   .events-section {
     .event {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      padding: 10px;
+      .event-item {
+        // background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        // padding: 20px;
+        font-size: 30px;
+        text-align: center;
+      }
+    }
+  }
+  .memory-section {
+    .memory {
+      // background-color: rgba(202, 168, 17, 0.418);
+      display: grid;
+      grid-template-columns: auto auto auto auto auto;
     }
   }
 }

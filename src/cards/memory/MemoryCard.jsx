@@ -1,7 +1,18 @@
 import React from "react";
 
-const MemoryCard = () => {
-  return <div className="memory">MemoryCard</div>;
+import "./MemoryCard.scss";
+
+const MemoryCard = (props) => {
+  return (
+    <div className="memory">
+      <img
+        src={props.src}
+        className={`image ${
+          props.nameClass === "portrait" ? "portrait" : "landscape"
+        }`}
+      />
+    </div>
+  );
 };
 
 export default MemoryCard;
