@@ -3,9 +3,10 @@ import "./Events.scss";
 import EventCard from "../../../cards/events/EventCard";
 import MemoryCard from "../../../cards/memory/MemoryCard";
 import eventsList from "../../../assets/arrays/events";
-import memorylist from "../../../assets/arrays/memories";
+import imagelist from "../../../assets/arrays/images";
 
 const Events = () => {
+  console.log(imagelist);
   return (
     <div className="events">
       <div className="events-section">
@@ -25,17 +26,9 @@ const Events = () => {
       </div>
       <div className="memory-section">
         <h3>Memories</h3>
-        <div className="memory">
-          {memorylist.map((mem) => (
-            <div
-              className={`memory-item  ${
-                mem.display === "portrait" ? "portrait" : "landscape"
-              } `}
-            >
-              <MemoryCard src={mem.src} nameClass={mem.display} />
-            </div>
-          ))}
-        </div>
+        {imagelist.map((image) => (
+          <MemoryCard key={image.id} src={image.src} text={image.text} />
+        ))}
       </div>
     </div>
   );
